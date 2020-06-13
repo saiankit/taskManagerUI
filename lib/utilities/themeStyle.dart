@@ -7,14 +7,13 @@ class ThemeStyle {
       color: ThemeColor.kdarkblue);
   static final TextStyle tabText = TextStyle(
     fontSize: 20.0,
-    fontFamily: 'futura',
-    color: ThemeColor.kdarkblue);
+    fontFamily: 'futura',);
   static final TextStyle appBarSubTitle = TextStyle(
     fontSize: 15.0,
     fontFamily: 'futura',
     color: ThemeColor.kgrey);
   static final TextStyle taskText = TextStyle(
-    fontSize: 15.0,
+    fontSize: 20.0,
     fontFamily: 'futura',
     color: ThemeColor.kdarkblue);
 }

@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'UI Challenge',
+      debugShowCheckedModeBanner: false,
       home: MyHomePage(),
     );
   }
@@ -29,15 +29,12 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
         padding: const EdgeInsets.only(top : 50.0),
         child: Column(
           children: <Widget>[
-            Container(
-              width: MediaQuery.of(context).size.width,
-              child: Header()
-            ),
+            Header(),
             Container(
               width: MediaQuery.of(context).size.width,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  SizedBox(width: (MediaQuery.of(context).size.width)/2-40.0,),
                   Text('Mobile App',style: ThemeStyle.appBarSubTitle),
                 ],
               ),
