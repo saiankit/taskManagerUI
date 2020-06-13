@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                   Text('Mobile App',style: ThemeStyle.appBarSubTitle),
                 ],
               ),
-            ),
+            ), 
             SizedBox(height: 20.0,),
             CustomTabBar(),
           ],

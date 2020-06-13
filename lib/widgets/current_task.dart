@@ -5,28 +5,33 @@ class CurrentTaskCard extends StatelessWidget {
   final String taskText;
   final String timeLeft;
   final Icon icon;
-  CurrentTaskCard({this.taskText,this.timeLeft,this.icon});
+  final Color cardColor;
+  CurrentTaskCard({this.taskText,this.timeLeft,this.icon,this.cardColor});
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100.0,
-      width: 200.0,
-      decoration: BoxDecoration(
-         borderRadius: BorderRadius.circular(20.0)
-      ),
+      width: 250.0,
       child: Card(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                this.icon,
-                Text(this.timeLeft,style: ThemeStyle.taskText,)
-              ],
-            ),
-            Text(this.taskText,style: ThemeStyle.taskText,)
-          ],
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15.0)
+        ),
+        color: this.cardColor,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  this.icon,
+                  Text(this.timeLeft,style: ThemeStyle.taskText,)
+                ],
+              ),
+              Text(this.taskText,style: ThemeStyle.taskText,)
+            ],
+          ),
         ),
       ),
     );
