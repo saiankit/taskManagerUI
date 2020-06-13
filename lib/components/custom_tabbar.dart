@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../utilities/text_style.dart';
-import '../utilities/constants.dart';
+import '../utilities/themeStyle.dart';
+import '../utilities/themeColor.dart';
 import '../screens/calendar.dart';
 import '../screens/tasks.dart';
 import '../screens/team.dart';
@@ -25,14 +25,14 @@ class _CustomTabBarState extends State<CustomTabBar> with SingleTickerProviderSt
           padding: EdgeInsets.only(left : 15.0),
           child: TabBar(
             controller: tabController,
-            indicatorColor: kpurple,
-            labelColor: kpurple ,
-            unselectedLabelColor: kgrey,
+            indicatorColor: ThemeColor.kpurple,
+            labelColor: ThemeColor.kpurple ,
+            unselectedLabelColor: ThemeColor.kgrey,
             isScrollable: false,
             tabs: <Widget>[
-              Tab(child: Text('Team',style: labelTextStyle(20.0)),),
-              Tab(child: Text('Tasks',style: labelTextStyle(20.0)),),
-              Tab(child: Text('Calendar',style: labelTextStyle(20.0)),)
+              Tab(child: Text('Team',style: ThemeStyle.tabText),),
+              Tab(child: Text('Tasks',style: ThemeStyle.tabText),),
+              Tab(child: Text('Calendar',style: ThemeStyle.tabText),)
             ],
           ),
         ),

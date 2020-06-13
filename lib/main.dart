@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'utilities/text_style.dart';
-import 'utilities/constants.dart';
+import 'utilities/themeStyle.dart';
 import './components/custom_tabbar.dart';
 import './components/header.dart';
 void main() {
@@ -39,13 +38,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
               child: Row(
                 children: <Widget>[
                   SizedBox(width: (MediaQuery.of(context).size.width)/2-40.0,),
-                  Text(
-                    'Mobile App',
-                    style: TextStyle(
-                      color: kgrey,
-                      fontSize: 15.0
-                    ),
-                  ),
+                  Text('Mobile App',style: ThemeStyle.appBarSubTitle),
                 ],
               ),
             ),

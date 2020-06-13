@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../utilities/text_style.dart';
-import '../utilities/constants.dart';
+import '../utilities/themeStyle.dart';
+import '../utilities/themeColor.dart';
 class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -8,9 +8,9 @@ class Header extends StatelessWidget {
       child : Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  IconButton(icon: Icon(Icons.arrow_back_ios),onPressed: () {},color: kpurple,),
-                  Text('Design Team',style: labelTextStyle(25.0),),
-                  IconButton(icon: Icon(Icons.edit),onPressed: () {},color: kgrey,),
+                  IconButton(icon: Icon(Icons.arrow_back_ios),onPressed: () {},color: ThemeColor.kpurple,),
+                  Text('Design Team',style: ThemeStyle.appBar,),
+                  IconButton(icon: Icon(Icons.edit),onPressed: () {},color: ThemeColor.kgrey,),
                 ],
               ),
     );
