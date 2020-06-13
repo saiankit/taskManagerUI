@@ -15,5 +15,5 @@ class ThemeStyle {
   static final TextStyle taskText = TextStyle(
     fontSize: 20.0,
     fontFamily: 'futura',
-    color: ThemeColor.kdarkblue);
+    color: Colors.black);
 }
