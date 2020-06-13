@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../constants.dart';
+import '../utilities/text_style.dart';
+import '../utilities/constants.dart';
 import '../screens/calendar.dart';
 import '../screens/tasks.dart';
 import '../screens/team.dart';

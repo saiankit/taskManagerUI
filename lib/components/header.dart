@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../constants.dart';
+import '../utilities/text_style.dart';
+import '../utilities/constants.dart';
 class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

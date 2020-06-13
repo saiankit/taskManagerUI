@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
+import 'utilities/text_style.dart';
+import 'utilities/constants.dart';
 import './components/custom_tabbar.dart';
 import './components/header.dart';
 void main() {
